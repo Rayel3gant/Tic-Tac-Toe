@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TaC-TOE</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="box-border m-0 p-0 bg-gradient-to-r from-cyan-500 to-blue-500 w-full h-screen overflow-hidden">
+    <div class="flex justify-between w-full px-5 py-1 leading-loose ">
+        <div class="w-[80%] max-w-[600px] flex justify-between flex-col sm:flex-row">
+            <button  class="  border-b-0  navItem" id="navItem1">TIC-TAC-TOE</button>
+            <button class="navItem " id="navItem2">How to play?</button>
+            <button class="navItem " id="navItem3">Leaderboard</button>
+        </div>
+
+        <div class="w-[5rem] h-[5rem]  sm-w-[4rem] sm-h-[4rem]">
+            <img src="tic-tac-toe-gf7424af7e_1280.png" alt="">
+        </div>
+    </div>
+
+    <div class=" w-full h-screen" >
+        
+        
+        <div class=" flex justify-center items-center myScreen" id="screen1">  
+
+            <div class="w-[90%] max-w-[700px] p-5 flex flex-col items-center gap-y-5">
+                <div id="gameStatus" class="bg-[#dbd0d0] px-5 py-3 border-2 rounded-md"></div>
+    
+                <div class="grid grid-cols-3 grid-rows-3 w-[80%] max-w-[500px] border-2 h-[200px] mx-auto bg-[#dbd0d0] rounded-md ">
+                    <div class="  box " id="box1"></div>
+                    <div class=" box " id="box2"></div>
+                    <div class=" box " id="box3"></div>
+                    <div class="  box " id="box4"></div>
+                    <div class=" box " id="box5"></div>
+                    <div class=" box " id="box6"></div>
+                    <div class=" box " id="box7"></div>
+                    <div class="  box " id="box8"></div>
+                    <div class=" box " id="box9"></div>
+                </div>
+    
+                <button id="newGame" class="px-5 py-3 border-2 rounded-md bg-[#dbd0d0] border-black ">New Game</button>
+            </div>
+        </div>
+
+        <div class=" w-full h-screen  p-3 relative myScreen" id="screen2">
+            <div class="Text2">RULES</div>
+            <ul>
+                <li>The game is played on a grid that's 3 squares by 3 squares.</li>
+                <li>You are X, your friend (or the computer in this case) is O. Players take turns putting their marks in empty squares.</li>
+                <li>The first player to get 3 of her marks in a row (up, down, across, or diagonally) is the winner.</li>
+                <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.</li>
+            </ul>
+            <br><br><br>
+            <article>
+                <h1 class="Text2">	HOW CAN YOU WIN AT TIC-TAC-TOE?</h1>
+                <p>
+                    To beat the computer (or at least tie), you need to make use of a little bit of strategy. Strategy means figuring out what you need to do to win.
+                    Part of your strategy is trying to figure out how to get three Xs in a row. The other part is trying to figure out how to stop the computer from getting three Os in a row.
+                    <br>
+                    After you put an X in a square, you start looking ahead. Where's the best place for your next X? You look at the empty squares and decide which ones are good choices—which ones might let you make three Xs in a row.
+                    You also have to watch where the computer puts its O. That could change what you do next. If the computer gets two Os in a row, you have to put your next X in the last empty square in that row, or the computer will win. You are forced to play in a particular square or lose the game.
+                    <br>
+                    If you always pay attention and look ahead, you'll never lose a game of Tic-Tac-Toe. You may not win, but at least you'll tie.
+                </p>
+            </article>
+            <img src="tic-tac-toe-gf7424af7e_1280.png" class="myImage absolute w-[50px] h-[50px] ">
+        </div>
+    
+        <div class="w-full h-screen myScreen px-5 flex justify-center items-center" id="screen3">
+            <div class="flex flex-col md:flex-row  gap-x-[10rem]">
+                <div class=" flex flex-col items-center ">
+                    <div>X</div>
+                    <div>WINS!!!</div>
+                    <div id="score1">0</div>
+                </div>
+
+                <div class=" flex flex-col items-center ">
+                    <div>O</div>
+                    <div>WINS!!!</div>
+                    <div id="score2">0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

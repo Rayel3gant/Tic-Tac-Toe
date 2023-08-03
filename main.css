@@ -1,0 +1,83 @@
+.active{
+    display:block;
+}
+.hidden{
+    display: none;
+}
+.greenBG{
+    background-color: rgb(76, 245, 76);
+}
+.box{
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.activeNavItem{
+    color: antiquewhite;
+    border-bottom: 2px solid antiquewhite;
+}
+#navItem1{
+    font-family: 'Climate Crisis';
+    font-size:40px;
+    color: dodgerblue;
+}
+#screen3{
+    font-family: 'Climate Crisis';
+    font-size:80px;
+    color: antiquewhite;
+}
+.noPointerEvents{
+    pointer-events: none
+}
+.Text2{
+    font-family: 'Climate Crisis';
+    font-size: x-large;
+}
+.screen2 ul ,.screen2 p,body{
+    font-family: 'Raleway';
+    font-size: medium;
+}
+.myImage{
+    opacity: 0.3;
+    animation-name: backgroundMovement;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+
+
+@keyframes backgroundMovement{
+    0%{
+        top: 10%;
+        left: 20%;
+    }
+    20%{
+        top: 30%;
+        left: 45%;
+    }
+    40%{
+        top: 60%;
+        left: 90%;
+        transform: rotate(60deg);
+    }
+    60%{
+        top: 90%;
+        left: 40%;
+        transform: rotate(180deg);
+        transform: scale(2);
+
+    }
+    80%{
+        top: 40%;
+        left:25% ;
+    }
+    100%{
+        top: 10%;
+        left: 20%;
+    }
+}
